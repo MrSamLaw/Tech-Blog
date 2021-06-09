@@ -11,15 +11,15 @@
         <form class="form new-post-form">
             <div class="form-group">
                 <label for="post-title">Post Title:</label>
-                <input class="form-input" type="text" id="post-title" name="post-title" />
+                <input class="form-control" type="text" id="post-title" name="post-title" />
             </div>
             <div class="form-group">
                 <label for="post-content">Content:</label>
-                <textarea class="form-input" id="post-content" name="post-content"></textarea>
+                <textarea class="form-control" id="post-content" name="post-content" rows="5"></textarea>
             </div>
             <div class="form-group">
                 <label for="post-summary">Summary:</label>
-                <textarea class="form-input" id="post-summary" name="post-summary"></textarea>
+                <textarea class="form-control" id="post-summary" name="post-summary"></textarea>
                 </div>
                 <div class="form-group">
                 <button type="submit" class="btn btn-primary">Create</button>
@@ -30,23 +30,22 @@
     {{#if posts.length}}
     <div class="col-md-6 post-list">
         <h3>Your Posts:</h3>
-
-        <!-- Loop over each object in the posts array -->
         {{#each posts as |post| }}
-        <div class="row mb-4 post">
-            <div class="col-md-5">
-                <h2>
-                    <a href="/post/{{post.id}}">{{post.name}}</a>
-                </h2>
-                <p>{{format_date post.date_created}}</p>
-                <p>{{post.summary}}</p>
-            </div>
-            <div class="col-md-4">
-                <a class="btn btn-sm btn-warning" href="/update/{{post.id}}">UPDATE</a>
+        <div class="row mb-6 post">
+            <div class="card w-100 my-2">
+                <div class="card-header">
+                    <h3><a href="/post/{{post.id}}">{{post.name}}</a></h3>
+                    <small class="text-muted">{{format_date post.date_created}}</small>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{post.summary}}</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-sm btn-warning" href="/update/{{post.id}}">UPDATE</a>
                 <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+                </div>
             </div>
-
-        </div>
+        </div>        
         {{/each}}
     </div>
     {{/if}}

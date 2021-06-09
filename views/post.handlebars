@@ -1,22 +1,30 @@
-<div class="text-center">
-    <h2>{{name}}</h2>
-    <p>{{summary}}</p>
-    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+<div class="jumbotron">
+    <h1 class="display-4">{{name}}</h1>
+    <p class="lead">{{summary}}</p>
+    <p>Author: {{user.name}} | {{format_date date_created}}</p>
+    <hr class="my-4">
     <p>
         {{content}}
     </p>
 </div>
 
-<div class="row">
-    <h3>Comments</h3>
-    {{#if comments.length}}
-    {{#each comments as |comment| }}
-    <div class="row mb-4 post">
-        <div class="col-md-5">
-            <h5>{{this.comment}}</h5>
-            <p>{{format_date this.comment_date}}</p>
-        </div>
+<div class="row my-4">
+    <h4>Comments</h4>
     </div>
+    <div class="row my-8"
+    {{#if comments.length}}
+    <div class="col-md-8">
+    {{#each comments as |comment| }}
+
+    <div class="card w-100 my-2">
+    <div class="card-body">
+      <p class="card-text">{{this.comment}}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{{user.name}}  |  {{format_date this.comment_date}}</small>
+    </div>
+  </div>
+
     {{/each}}
     {{else}}
     <div class="row mb-4">
@@ -32,7 +40,7 @@
     <form class="form new-comment-form">
         <div class="form-group">
             <label for="comment-comment">Comment:</label>
-            <input class="form-input" type="text" id="comment-comment" name="comment-comment" />
+            <input class="form-control" type="text" id="comment-comment" name="comment-comment" size="100"/>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" id="commentBtn" data-id="{{id}}">Submit</button>

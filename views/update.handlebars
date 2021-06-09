@@ -1,19 +1,19 @@
 <div class="row mt-4">
-    <div class="col-md-6">
+    <div class="col-md-9">
         <h3>Update Your Post:</h3>
 
         <form class="form update-post-form">
             <div class="form-group">
                 <label for="post-title">Post Title:</label>
-                <input class="form-input" type="text" id="post-title" name="post-title" value="{{name}}" />
+                <input class="form-control" type="text" id="post-title" name="post-title" value="{{name}}" />
             </div>
             <div class="form-group">
                 <label for="post-content">Content:</label>
-                <textarea class="form-input" id="post-content" name="post-content">{{content}}</textarea>
+                <textarea class="form-control" id="post-content" name="post-content">{{content}}</textarea>
             </div>
             <div class="form-group">
                 <label for="post-summary">Summary:</label>
-                <textarea class="form-input" id="post-summary" name="post-summary">{{summary}}</textarea>
+                <textarea class="form-control" id="post-summary" name="post-summary">{{summary}}</textarea>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" id="updateBtn" data-id="{{id}}">Update</button>
