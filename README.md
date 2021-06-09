@@ -1,18 +1,17 @@
 # Talkin' Tech
 
-A CMS-Style Tech Blog
-
 ![Screen Shot](assets/Talkin-Tech01.png)
 
 ## Deployment
 
-Talkin' Tech has been deployed on Heroku [(https://desolate-reef-25794.herokuapp.com/](https://desolate-reef-25794.herokuapp.com/)
+Talkin' Tech has been deployed on Heroku [(https://sl-tech-blog.herokuapp.com/](https://sl-tech-blog.herokuapp.com/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Technologies
 
 - Node.js, using Express, Express Sessions, Sequelize, Handlebars, BCrypt, dotenv & JAWSDB
+- Bootstrap
 
 ## Description
 
