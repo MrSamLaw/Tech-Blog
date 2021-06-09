@@ -4,6 +4,7 @@ const updateFormHandler = async (event) => {
     const name = document.querySelector('#post-title').value.trim();
     const content = document.querySelector('#post-content').value.trim();
     const summary = document.querySelector('#post-summary').value.trim();
+    const id = document.querySelector('#updateBtn').getAttribute('data-id');
   
     if (name && content && summary) {
       const response = await fetch(`/api/posts/${id}`, {
