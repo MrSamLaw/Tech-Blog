@@ -1,21 +1,22 @@
 const commentFormHandler = async (event) => {
     event.preventDefault();
   
-    const post_id = event.target.getAttribute('post-id');
+    const post_id = document.querySelector('#commentBtn').getAttribute('data-id');
     const comment = document.querySelector('#comment-comment').value.trim();
-      
-    if (comment) {
-      const response = await fetch(`/api/comment`, {
+    
+        if (comment) {
+      const response = await fetch(`/api/comment/`, {
         method: 'POST',
-        body: JSON.stringify({ comment, post_id }),
+        body: JSON.stringify({ post_id,comment }),
         headers: {
           'Content-Type': 'application/json',
         },
       });
-  
+  console.log(response);
       if (response.ok) {
         document.location.reload();
       } else {
+
         alert('Failed to add comment');
       }
     }
