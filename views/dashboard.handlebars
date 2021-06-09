@@ -18,6 +18,10 @@
                 <textarea class="form-input" id="post-content" name="post-content"></textarea>
             </div>
             <div class="form-group">
+                <label for="post-summary">Summary:</label>
+                <textarea class="form-input" id="post-summary" name="post-summary"></textarea>
+                </div>
+                <div class="form-group">
                 <button type="submit" class="btn btn-primary">Create</button>
             </div>
         </form>
@@ -35,13 +39,10 @@
                     <a href="/post/{{post.id}}">{{post.name}}</a>
                 </h2>
                 <p>{{format_date post.date_created}}</p>
-            </div>
-            <div class="col-md-7">
-                <p>
-                    {{post.content}}
-                </p>
+                <p>{{post.summary}}</p>
             </div>
             <div class="col-md-4">
+                <a class="btn btn-sm btn-warning" href="/edit/{{post.id}}">EDIT</a>
                 <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
             </div>
 

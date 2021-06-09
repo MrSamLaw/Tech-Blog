@@ -1,0 +1,51 @@
+<div class="text-center">
+    <h2>{{name}}</h2>
+    <p>{{summary}}</p>
+    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    <p>
+        {{content}}
+    </p>
+</div>
+
+<div class="row">
+    <h3>Comments</h3>
+    {{#if comments.length}}
+    {{#each comments as |comment| }}
+    <div class="row mb-4 post">
+        <div class="col-md-5">
+            <h5>{{this.comment}}</h5>
+            <p>{{format_date post.date_created}}</p>
+            <p>{{post.summary}}</p>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="row mb-4">
+        <div class="col-md-5">
+            <p>Be the first to leave a comment!!</p>
+        </div>
+    </div>
+    {{/if}}
+</div>
+
+<div class="row">
+    {{#if logged_in}}
+    <form class="form new-comment-form">
+        <div class="form-group">
+            <label for="comment-comment">Comment:</label>
+            <input class="form-input" type="text" id="comment-comment" name="comment-comment" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+    {{else}}
+    <p><a href="/login">Login</a> to comment</p>
+    {{/if}}
+</div>
+
+<script src="/js/comment.js"
