@@ -1,0 +1,29 @@
+[
+     {
+         "name": "Apple Announces macOS Monterey",
+         "content": "Apple today announced macOS 12, which it's calling macOS Monterey. The new version of macOS is gaining features like Universal Control, AirPlay to Mac, and Shortcuts for Mac. Apple said that ‌macOS Monterey‌'s updates will help users get more done and work more fluidly across Apple devices.  Starting with Safari updates, Apple has redesigned the tabs in its web browser, letting users see more of the webpage they are on. The new tab bar takes on the color of the page and combines tabs, the tool bar, and the search field into one compact design. With Tab Groups, users can easily save and manage tabs, and these sync across Mac, iPhone, and iPad.  ‌macOS Monterey‌ will also see the introduction of a Shortcuts app for Mac. Just like on iOS, Shortcuts on Mac lets users accomplish tasks with ease, and Apple will introduce a large assortment of pre-built shortcuts for Mac users.  Universal Control connects a Mac to an ‌iPad‌, letting users work with a single mouse and keyboard, or trackpad. Users will be able to drag their macOS mouse seamlessly over to an ‌iPad‌, and can even drag and drop content back and forth between devices.",
+         "summary": "With Shortcuts App, Updated Safari Browsing, 'Focus' Do Not Disturb Features, and More",
+         "date_created": "2021-06-08 05:13:13"
+     },
+     {
+        "name": "Don’t panic: ‘Algorithm updates’ aren’t the end of the world for SEO managers",
+        "content": "Every time there is a rumor of a Google algorithm update, a general panic ripples through the SEO community. There is a collective holding of breath while the numbers are analyzed and then a sigh of relief (hopefully) when they survive the algorithm update unscathed.  After the update is released, and especially if it is confirmed by Google, a slew of articles and pundit analyses attempt to dissect what Google changed and how to win in the new paradigm.  I believe all this angst is entirely misplaced.",
+        "summary": "Chase the user, not the algorithm"
+     },
+     {
+        "name": "Supersonic flights are making a comeback — and you still won’t be able to afford them",
+        "content": "United Airlines has announced it will purchase up to 50 Boom Overture supersonic jets for commercial use by 2029, heralding the return of supersonic passenger flights nearly 20 years after the Concorde was decommissioned.  Supersonic planes halve the time it takes to fly from New York to London, from seven hours down to 3.5 hours, but such airliners were abandoned following Concorde’s final flight in 2003. Concorde had become financially unworkable after a high-profile crash in 2000, combined with excessive ticket prices, high fuel consumption, and increasingly high maintenance costs.  If Boom’s supersonic aircraft is to succeed, it will depend on overcoming these issues that derailed Concorde. So can it be done?",
+        "summary": "They might use sustainable fuel and better aircraft, but seats won't come cheap",
+        "date_created": "2021-06-05 15:13:13"
+     },
+     {
+        "name": "Automating Job Applications Tracking with Notion API, Node.js and FastifyJS",
+        "content": "Notion is productivity software that allows you to create systems for knowledge management, project management, and note-taking.  They recently released their API to the public. You can use the API to integrate your Notion data to any application you want.  Thus, this article shows you to:  1. build a Node.js API with Notion  2. use FastifyJS to create the API  Without further ado, let's start configuring your Notion workspace.",
+        "summary": "Learn how to use the new Notion API with Node.js and FastifyJS"
+     },
+     {
+        "name": "How Harold Can Generate A Website For You",
+        "content": "Harold (create-harold-app) is a simple tool that provides a ready-to-use template for creating your static websites and blogs. It is based on well-known Handlebars, Markdown, and Scss to be simple to use and start.  What can you do with it?  For example, with Harold and services like Netlify you can build your blog and website in a fraction of time. You’ll get a nice responsive design and a built-in search engine based on Lunr and indexed posts content. You can build small and medium websites, blogs, documentation sites, landing pages. Start with: npm init harold-app my-app-name.  Check the docs: https://www.haroldjs.com/docs",
+        "summary": "Harold (create-harold-app) is a simple tool that provides a ready-to-use template for creating your static websites and blogs."
+     },
+]
