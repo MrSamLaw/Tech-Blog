@@ -25,5 +25,5 @@
         "name": "How Harold Can Generate A Website For You",
         "content": "Harold (create-harold-app) is a simple tool that provides a ready-to-use template for creating your static websites and blogs. It is based on well-known Handlebars, Markdown, and Scss to be simple to use and start.  What can you do with it?  For example, with Harold and services like Netlify you can build your blog and website in a fraction of time. You’ll get a nice responsive design and a built-in search engine based on Lunr and indexed posts content. You can build small and medium websites, blogs, documentation sites, landing pages. Start with: npm init harold-app my-app-name.  Check the docs: https://www.haroldjs.com/docs",
         "summary": "Harold (create-harold-app) is a simple tool that provides a ready-to-use template for creating your static websites and blogs."
-     },
+     }
 ]
