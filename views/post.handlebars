@@ -15,11 +15,7 @@
     <div class="row mb-4 post">
         <div class="col-md-5">
             <h5>{{this.comment}}</h5>
-            <p>{{format_date post.date_created}}</p>
-            <p>{{post.summary}}</p>
-        </div>
-        <div class="col-md-4">
-            <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+            <p>{{format_date this.comment_date}}</p>
         </div>
     </div>
     {{/each}}

@@ -5,14 +5,14 @@ const commentFormHandler = async (event) => {
     const comment = document.querySelector('#comment-comment').value.trim();
     
         if (comment) {
-      const response = await fetch(`/api/comment/`, {
+      const response = await fetch(`/api/comments/`, {
         method: 'POST',
         body: JSON.stringify({ post_id,comment }),
         headers: {
           'Content-Type': 'application/json',
         },
       });
-  console.log(response);
+
       if (response.ok) {
         document.location.reload();
       } else {
